@@ -55,12 +55,13 @@ background-color:black;
 border:0;
 }
 #btS {
-height:100%;
-width:100%;
+height:50%;
+width:50%;
 font-size:60%;
 color:Black;
-background-color:white;
+background-color:black;
 border:0;
+text-align: center;
 
 
 }
