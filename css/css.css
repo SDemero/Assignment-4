@@ -27,7 +27,18 @@ body{
  margin-left: -50px;
 }
 
-#btn {
+#Btn {
 height:200px;
 width:200px;
+font-size:200px;
+}
+#myBtn {
+height:200px;
+width:200px;
+font-size:200px;
+}
+#btS {
+height:200px;
+width:200px;
+font-size:200px;
 }
