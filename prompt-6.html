@@ -19,6 +19,7 @@
 
     //Creates a notification on browser stating the answer
     window.alert("Hey " + name + ", the volume of your sphere is " + volume.toFixed(2));
+      window.location.reload();
 }
   </script>
 </head>
@@ -27,7 +28,7 @@
     <form>
         <label for="name">Mind telling us who you are ?</label><br>
         <input type="text" name="name" id = "name"><br>
-        <label for="radius"> What is the radius of your sphere?</label><br>
+        <label for="radius" class = "radius"> What is the radius of your sphere?</label><br>
         <input type="text" id = "radius" name="radius">
         <button type = "button" onclick="calculate()" >Submit</button>
     </form>
