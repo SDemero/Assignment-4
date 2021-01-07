@@ -6,11 +6,13 @@
   <button id="Sibling 1">Sibling 1</button>
   
   <br>
+  <p id="demo"></p>
+  <p id="demo1"></p>
   <br>
   
   <button id="Sibling 2">Sibling 2</button>
 
-<p id="demo"></p>
+
 
 <script>
 document.getElementById("Sibling 1").addEventListener("click", Argue());
@@ -22,7 +24,7 @@ function Argue(){
   document.getElementById("demo").innerHTML += "I'm right! <br>";
 }
   function Argue2(){
-  document.getElementById("demo").innerHTML += "<No, I'm right!<br>";
+  document.getElementById("demo1").innerHTML += "<No, I'm right!<br>";
 }
 </script>
 
