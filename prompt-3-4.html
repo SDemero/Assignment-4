@@ -1,6 +1,7 @@
 <html>
 <body>
-<form action="action_page.php" method="post">
+<script src="password.js" async></script>
+<form onsubmit="validatePassword()">
   <div class="container">
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
@@ -29,18 +30,4 @@
   </div>
 </form>
 </body>
-<script>
-var password = document.getElementById("psw");
-
-function check(){
-    if(password.value == "123456789")
-        return true;
-    else 
-        document.getElementById("err").innerHTML = "Wrong password."
-        return false;
-}
-
-password.onfocus = check();
-
-</script>
 </html>
