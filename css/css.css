@@ -10,7 +10,8 @@ body{
 	margin-top: 200px;
 }
 
-#prompt6 button[type = "button"]{
+
+#prompt6 button[type = "button"] , #home_button button{
   background-color: green;
   cursor: pointer;
   border-radius: 10%;
