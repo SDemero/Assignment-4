@@ -1,0 +1,34 @@
+body{
+	margin: 0;
+	font-size: 32;
+	font-family: sans-serif;
+}
+
+#one{
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+#four{
+	padding-bottom: 100px;
+}
+
+#four  {
+
+
+}
+
+#six{
+	padding-left: 100px;
+}
+
+#six input[type = "text"]{
+	margin-left: 100px;
+	justify-content: flex;
+	
+}
+
+#six button[type = "button"]{
+	margin-left: 35px;
+}
+

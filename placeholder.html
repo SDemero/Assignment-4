@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prompt-6</title>
+    <link rel="stylesheet" href="css/css.css">
+  <script> 
+
+    document.getElementById("Sibling 1").addEventListener("click", Argue());
+  
+    document.getElementById("Sibling 2").addEventListener("click", Argue2(  ));
+
+
+    function Argue(){
+    document.getElementById("demo").innerHTML += "I'm right! <br>";
+    }
+ 
+    function Argue2(){
+    document.getElementById("demo").innerHTML += "<No, I'm right!<br>";
+    }
+
+    function calculate(){
+    let submit = document.getElementById("radius");
+    let name = document.getElementById("name").value;
+
+    //variables for calculation
+    let radius = submit.value;
+    const pie = 3.14;
+    let volume;
+
+    volume = (4.0/3.0) * pie * Math.pow(radius, 3);
+
+    window.alert("Hey " + name + ", the volume of your sphere is " + volume.toFixed(2));
+}
+
+  </script>
+</head>
+<body>
+    <div id = "one">
+        <h1>Prompt 1 and 2 </h1>
+  
+        <button id="Sibling 1">Sibling 1</button>
+  
+        <br>
+       <br>
+  
+        <button id="Sibling 2">Sibling 2</button>
+
+        <p id="demo"></p>
+    </div>
+    <div id = "four">
+        <form action="action_page.php" method="post">
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw"><b>First Name</b></label>
+                <input type="password" placeholder="Enter First Name" name="fn" required>
+
+                <label for="psw"><b>Last Name</b></label>
+                <input type="password" placeholder="Enter Last Name" name="ln" required>
+
+                <label for="psw"><b>Phone Number</b></label>
+                <input type="password" placeholder="Enter Phone Number" name="pn" required>
+
+                <button type="submit">Submit</button>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+    <div id= "six">
+        <form>
+            <label for="name">Mind telling us who you are ?</label><br>
+            <input type="text" name="name" id = "name"><br>
+            <label for="radius"> What is the radius of your sphere?</label><br>
+            <input type="text" id = "radius" name="radius">
+            <button type = "button" onclick="calculate()" >Submit</button>
+        </form>
+    </div>
+</body>
+</html>

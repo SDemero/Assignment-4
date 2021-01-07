@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prompt-6</title>
+  <script> 
+    function calculate(){
+    let submit = document.getElementById("radius");
+    let name = document.getElementById("name").value;
+
+    //variables for calculation
+    let radius = submit.value;
+    const pie = 3.14;
+    let volume;
+
+    volume = (4.0/3.0) * pie * Math.pow(radius, 3);
+
+    window.alert("Hey " + name + ", the volume of your sphere is " + volume.toFixed(2));
+}
+  </script>
+</head>
+<body>
+    <form>
+        <label for="name">Mind telling us who you are ?</label><br>
+        <input type="text" name="name" id = "name"><br>
+        <label for="radius"> What is the radius of your sphere?</label><br>
+        <input type="text" id = "radius" name="radius">
+        <button type = "button" onclick="calculate()" >Submit</button>
+    </form>
+</body>
+</html>
