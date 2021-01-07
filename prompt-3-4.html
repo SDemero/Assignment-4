@@ -1,4 +1,5 @@
 <html>
+<body>
 <form action="action_page.php" method="post">
   <div class="container">
     <label for="uname"><b>Username</b></label>
@@ -6,6 +7,9 @@
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw"><b>Error</b></label>
+    <input type="password" placeholder="Wrong Password" name="err" required>
 
     <label for="psw"><b>First Name</b></label>
     <input type="password" placeholder="Enter First Name" name="fn" required>
@@ -24,4 +28,19 @@
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
+</body>
+<script>
+var password = document.getElementById("psw");
+
+function check(){
+    if(password.value == "123456789")
+        return true;
+    else 
+        document.getElementById("err").innerHTML = "Wrong password."
+        return false;
+}
+
+password.onfocus = check();
+
+</script>
 </html>
