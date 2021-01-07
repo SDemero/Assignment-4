@@ -8,16 +8,23 @@
 
     document.getElementById("Sibling 1").addEventListener("click", Argue());
   
-    document.getElementById("Sibling 2").addEventListener("click", Argue2(  ));
+    document.getElementById("Sibling 2").addEventListener("click", Argue2());
+      
+    document.getElementById("btS").addEventListener("mouseover", myAlert);
 
 
     function Argue(){
-    document.getElementById("demo").innerHTML += "I'm right! <br>";
+    document.getElementById("demo").innerHTML = "I'm right!<br>"
     }
  
     function Argue2(){
-    document.getElementById("demo").innerHTML += "<No, I'm right!<br>";
+    document.getElementById("demo").innerHTML = "No, I'm right<br>";
     }
+    function myAlert(){
+      alert("Hey, I told you not to hover over me!");
+    }
+      
+      
 
     function calculate(){
     let submit = document.getElementById("radius");
@@ -47,6 +54,11 @@
         <button id="Sibling 2">Sibling 2</button>
 
         <p id="demo"></p>
+        
+        <p>Prompt 2</p>
+  
+  <button id="btS">Success</button>
+        
     </div>
     <div id = "four">
         <form action="action_page.php" method="post">
