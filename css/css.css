@@ -39,14 +39,20 @@ body{
 }
 
 #Btn {
-height:40%;
+height:1000%;
 width:50%;
 font-size:30%;
+background-color:black;
+color: white;
+border:0;
 }
 #myBtn {
-height:40%;
+height:100%;
 width:50%;
 font-size:30%;
+color: white;
+background-color:black;
+border:0;
 }
 #btS {
 height:100%;
@@ -54,6 +60,7 @@ width:100%;
 font-size:60%;
 color:Black;
 background-color:white;
+border:0;
 
 
 }
