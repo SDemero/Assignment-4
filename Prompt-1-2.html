@@ -38,14 +38,14 @@ function myThirdFunction() {
   
   <button id="btS">Success</button>
   
-  <p id="demo1"></p>
+
   
   <script>
     var i = document.getElementById("btS");
-    i.addEventListener("click", myAlert);
+    i.addEventListener("mouseover", myAlert);
     
     function myAlert(){
-      document.getElementById("demo1").innerHTML = "I'm right!<br>"
+      alert("Hey, I told you not to hover over me!");
     }
     
   </script>
