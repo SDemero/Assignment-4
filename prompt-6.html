@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Prompt-6</title>
-  <script> 
+    <link rel = "stylesheet" type = "text/css" href = "css/css.css">
+  <script>
+    //Solving question number 6 
     function calculate(){
     let submit = document.getElementById("radius");
     let name = document.getElementById("name").value;
@@ -15,11 +17,13 @@
 
     volume = (4.0/3.0) * pie * Math.pow(radius, 3);
 
+    //Creates a notification on browser stating the answer
     window.alert("Hey " + name + ", the volume of your sphere is " + volume.toFixed(2));
 }
   </script>
 </head>
 <body>
+    <div id = "prompt6">
     <form>
         <label for="name">Mind telling us who you are ?</label><br>
         <input type="text" name="name" id = "name"><br>
@@ -27,5 +31,6 @@
         <input type="text" id = "radius" name="radius">
         <button type = "button" onclick="calculate()" >Submit</button>
     </form>
+    </div>
 </body>
 </html>
