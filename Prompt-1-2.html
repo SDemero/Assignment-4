@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Prompt 1 and 2 </h1>
+  
+  <button id="Sibling 1">Sibling 1</button>
+  
+  <br>
+  <br>
+  
+  <button id="Sibling 2">Sibling 2</button>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("Sibling 1").addEventListener("click", Argue());
+  
+document.getElementById("Sibling 2").addEventListener("click", Argue2());
+
+
+function Argue(){
+  document.getElementById("demo").innerHTML += "I'm right! <br>";
+}
+  function Argue2(){
+  document.getElementById("demo").innerHTML += "<No, I'm right!<br>";
+}
+</script>
+
+
+</body>
+</html>
