@@ -1,8 +1,7 @@
-var password = document.getElementById("psw").value;
-
 function check(){
-    if(password.value === "123456789")
-        alert("Submission Received");
+	let password = document.getElementById("psw").value;
+    if(password.value !== "123456789")
+        alert("Submission Incorrect");
     else 
-        alert("Password Incorrect")
+        alert("Password correct")
 }
