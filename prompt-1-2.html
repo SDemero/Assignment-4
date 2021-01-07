@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Prompt 1 and 2 </h1>
+  
+  <button id="Sibling 1">Sibling 1</button>
+  
+  <br>
+  <br>
+  
+  <button id="Sibling 2">Sibling 2</button>
 
+<p id="demo"></p>
+
+<script>
+document.getElementById("Sibling 1").addEventListener("click", hoverAlert);
+document.getElementById("Sibling 2").addEventListener("click", hoverAlert2);
+
+function displayCar() {
+document.write("<img border=\"0\" width=\"1100\" height=\"900\" src=\"https://raw.githubusercontent.com/SDemero/Demero_Samuel_ttp_static-/main/car.JPG\" /> ");
+}
+function hoverAlert(){
+  document.getElementById("demo").innerHTML += "I'm right! <br>";
+}
+  function hoverAlert2(){
+  document.getElementById("demo").innerHTML += "<No, I'm right!<br>";
+}
+</script>
+
+
+</body>
+</html>
